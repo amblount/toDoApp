@@ -39,14 +39,21 @@ public class MainActivity extends AppCompatActivity {
         new Firebase("https://todoapp-1e1dd.firebaseio.com/todoItems")
                 .addChildEventListener(new ChildEventListener() {
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                        adapter.add((String)dataSnapshot.child("text").getValue());
+                        adapter.add((String) dataSnapshot.child("text").getValue());
                     }
+
                     public void onChildRemoved(DataSnapshot dataSnapshot) {
-                        adapter.remove((String)dataSnapshot.child("text").getValue());
+                        adapter.remove((String) dataSnapshot.child("text").getValue());
                     }
-                    public void onChildChanged(DataSnapshot dataSnapshot, String s) { }
-                    public void onChildMoved(DataSnapshot dataSnapshot, String s) { }
-                    public void onCancelled(FirebaseError firebaseError) { }
+
+                    public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                    }
+
+                    public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                    }
+
+                    public void onCancelled(FirebaseError firebaseError) {
+                    }
                 });
 
         // Add items via the Button and EditText at the bottom of the window.
@@ -76,11 +83,11 @@ public class MainActivity extends AppCompatActivity {
                                     firstChild.getRef().removeValue();
                                 }
                             }
-                            public void onCancelled(FirebaseError firebaseError) { }
+
+                            public void onCancelled(FirebaseError firebaseError) {
+                            }
                         });
             }
         });
     }
-
-
 }
