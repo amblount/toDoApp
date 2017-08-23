@@ -39,6 +39,22 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+## Project Analysis
+
+As part of your pre-work submission, please reflect on the app and answer the following questions below:
+
+**Question 1:** "What are your reactions to the Android app development platform so far? Compare and contrast Android's approach to layouts and user interfaces in past platforms you've used."
+
+**Answer:** 
+
+Getting started with genymotion and debuggin were quite challenging. I was stuck on the same bug for like 2 weeks and is was a java syntax error. It was difficult for me to debug because I was not properly formatting my code so I wasn't easy to cathc the error at a glance. Once I got that bug fixed I thought the material design portion of the application platform was realatively straight forward. I am accustomed to working with material design in web development so this was very similar. I think there are some components with mobile that I am getting accusomted to and aslo the notion of widgets, and even components. I don't work with React much so this was a learning curve for me.
+
+**Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
+
+**Answer:** 
+
+
+
 ## License
 
     Copyright [2016] [Alivia Blount]
